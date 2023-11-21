@@ -3,9 +3,11 @@ package com.sikku;
 public class Main {
     public static void main(String[] args) {
         /*
+
         a to z
         A to Z
         _ $
+
         1. Identifier can not start with number
         2. can start with _
         3. can start with $
