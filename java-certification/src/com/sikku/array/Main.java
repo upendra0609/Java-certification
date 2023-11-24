@@ -48,10 +48,14 @@ public class Main extends Thread {
     in case of anonymous array we can not declare array size if elements are initialized
      */
     public static void main(String[] args) {
-        int[] a = new int[-2];  //runtime error
-        int[] b = new int[1212];
-        System.out.println(a.length);
-        m(new int[78]);
+//        int[] a = new int[-2];  //runtime error
+//        int[] b = new int[1212];
+//        System.out.println(a.length);
+//        m(new int[78]);
+
+        Object[] a = new String[3];
+        a[0] = new Object();  //run time error
+        a[1] = new String("sd");
 
     }
 
