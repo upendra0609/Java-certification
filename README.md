@@ -42,4 +42,36 @@ Every array in java is an object.
      */
 
 
-	int[] a = new int[-2];   //runTime error not compiler time error (compiler only check if you are providing int value or not)
+/*
+    Anonymous Array
+    new int[] {1,2,3}; //valid
+    new int[3] {1,2,3}; //Invalid
+    new int[4] {1,2,3}; //Invalid
+    new int[4]; //valid
+
+    in case of anonymous array we can not declare array size if elements are initialized
+*/
+
+
+
+Number------>
+child class
+1. Byte
+2. Short
+3. Integer
+4. Long
+5. Float
+6. Double
+
+
+Compiler always consider only reference type, but at runtime JVM will always consider 'runtime object' type.
+
+
+	Object[] a = new String[3];
+        a[0] = new Object();  	//run time error
+        a[0] = new String("sd");
+
+
+
+
+
