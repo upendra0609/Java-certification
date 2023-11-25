@@ -64,6 +64,8 @@ child class
 6. Double
 
 
+*****
+ **  
 Compiler always consider only reference type, but at runtime JVM will always consider 'runtime object' type.
 
 
@@ -73,5 +75,19 @@ Compiler always consider only reference type, but at runtime JVM will always con
 
 
 
+Local variable type inference(LVTI)=>
+    -->(valid for local variable only)
+
+var x = new String[89];   //valid
+var x = new int[89];      //valid
+
+var e = new Emp();          //valid
+var x = new Employee[89];   //valid
+
+var x = new var[34];   //Invalid
+
+var x = "kl";   //valid
 
 
+var i = 32;
+i = "do";    //invalid reqired int provided String

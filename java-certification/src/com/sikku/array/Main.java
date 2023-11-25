@@ -53,14 +53,29 @@ public class Main extends Thread {
 //        System.out.println(a.length);
 //        m(new int[78]);
 
-        Object[] a = new String[3];
-        a[0] = new Object();  //run time error
-        a[1] = new String("sd");
+//        Object[] a = new String[3];
+//        a[0] = new Object();  //run time error
+//        a[1] = new String("sd");
+        var e = new Emp();
+        System.out.println(e.getClass().getName());
+        var e1 = new Emp[23];
+        System.out.println(e1.getClass().getName());
+
+        var x = new String[89];
+        System.out.println(x.getClass().getName());
+
+
+        var i = 32;
+//        i = "do";
 
     }
 
     public static void m(int[] ar) {
     }
+
+}
+
+class Emp{
 
 }
 
