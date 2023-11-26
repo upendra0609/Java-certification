@@ -101,6 +101,53 @@ A) Based on type
 
 B)
 1.Instance   (declared withiin class directly, outside the method and constructoer. (stored in heap memory))
-2.Static     ()
-3.Local 
+2.Static     (    )
+3.Local      (    )
 	
+
+For instance and static variables JVM will provide default value but for local variable JVM won't provide default value, compulsary we should perform initialization implicitly before using that variable. If we are not using local variable, then we are not required to perform initialization explicitly.
+
+
+
+
+    public static void main(String[] args) {
+        int x;
+        if (args.length > 0) {
+            x = 10;
+        }
+        System.out.println(x);
+    }
+
+compile time error. (command line argument is run time phenominon)
+
+
+
+
+
+
+
+	int i;
+        int j = 10;
+        if (j < 5) {
+            j++;
+        } else {
+            j++;
+            i = j--;
+        }
+
+	System.out.println(i + "  " + j);  //compile time error
+
+
+if j is final then compiler will consider value of j and according to this value condition will be checked
+
+
+	int i;
+        int j = 10;
+        if (j < 5) {
+            j++;
+        } else {
+            j++;
+            i = j--;
+        }
+
+	System.out.println(i + "  " + j);  //valid

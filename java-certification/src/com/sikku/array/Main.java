@@ -75,7 +75,7 @@ public class Main extends Thread {
 
 }
 
-class Emp{
+class Emp {
 
 }
 
