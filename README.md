@@ -91,3 +91,16 @@ var x = "kl";   //valid
 
 var i = 32;
 i = "do";    //invalid reqired int provided String
+
+
+
+# Types of variables in java=>
+A) Based on type
+1. Primitive
+2. Reference
+
+B)
+1.Instance   (declared withiin class directly, outside the method and constructoer. (stored in heap memory))
+2.Static     ()
+3.Local 
+	
