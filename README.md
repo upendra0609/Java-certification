@@ -138,16 +138,82 @@ compile time error. (command line argument is run time phenominon)
 	System.out.println(i + "  " + j);  //compile time error
 
 
-if j is final then compiler will consider value of j and according to this value condition will be checked
+if j is final then compiler will consider value of j and according to this value, condition will be checked.
 
 
 	int i;
-        int j = 10;
+        final int j = 10;
         if (j < 5) {
-            j++;
+	    System.out.println(j);
         } else {
-            j++;
             i = j--;
         }
 
 	System.out.println(i + "  " + j);  //valid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class Main {
+	public static void main(String[] args) {
+        	System.out.println("Parent");
+    	}
+    
+}
+
+class Child extends Main{
+
+}
+
+-javac Main
+-java Child
+
+inheritance is applicable for main method, parent class main method will be executed if child class is not having main method.
+
+
+
+
+public class Main {
+	public static void main(String[] args) {
+        	System.out.println("Parent");
+    	}
+    
+}
+
+class Child extends Main{
+	public static void main(String[] args) {
+        	System.out.println("Parent");
+    	}
+}
+
+
+this is not method overridding this is method over hiding.
+method overloading is aplicable for main method but method overridding is not applicable for main method.
+
+
+
+
+public Main{
+	static{
+		System.out.print("static block");
+	}
+}
+
+run time exception, even static block will not be executed until there is no main method
