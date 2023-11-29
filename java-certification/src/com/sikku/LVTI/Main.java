@@ -24,5 +24,16 @@ public class Main {
         for (var x: ar){
             System.out.println(x);
         }
+
+//        var b = null;  //invalid
+
+        var var = 2;   //valid
+        System.out.println(var);
+
+//        int _ = 12;    //invalid
+        int _1 = 12;
+        int $3 = 23;
+        System.out.println($3);
+        System.out.println(_1);
     }
 }

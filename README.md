@@ -307,12 +307,39 @@ public class Main {
 
 1. as a instance/static variable
 2. we can not use LVTI for uninitialized local variables.
+3. For null value we can't use null.
+4. For method parameter var is not allowed. bcz at run time which type value will come compiler can't guess the type of value.
+5. For method return type we can't use var. bcz we don't know which value we are going to return.
 
 
 
 public class Main {
     
     public static void main(String[] args) {
-       var s;   //compile time error
-    }     
+       var s;   //compile time error bcz uf uninitilaization
+       var i = null;  //invalid
+    }
+	public void m1(var x){  //invalid
+
+	}
 }
+
+Note: var replaces at compile time with provided value that means var concept is applicable only in compile time not in run time
+
+	var var = 2;   //valid  bcz var is not a keyword in java after compilation var will replaced with int(int var = 2;)
+        System.out.println(var);   //valid
+
+
+
+var x = {1,2,3}; //invalid
+
+
+        int _ = 12;    //invalid  As of Java 9, '_' is a keyword, and may not be used as an identifier
+        int _1 = 12;   //valid
+        System.out.println(_1);
+
+	int _1 = 12;  //valid
+        int $3 = 23;  //valid
+        System.out.println($3);
+        System.out.println(_1);
+
