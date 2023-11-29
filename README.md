@@ -217,3 +217,102 @@ public Main{
 }
 
 run time exception, even static block will not be executed until there is no main method
+
+
+
+
+
+Type Inference-->
+	Based on provided value, automatic detection/ /identification of the type by compiler is called type inference.
+
+Local Variable Type Inference-->
+until java 9 for local variable we have to declare the type explicitly. but from java 10 version onwards, we are not required to declare 
+the type explicitly. Based on your provided value the type will considered automatically this is nothing but Local variable type inference.
+
+
+
+public static void main(String[] args) {
+        var s = "String";
+        s = "new String";
+        System.out.println(s);
+        var i = 12;
+        System.out.println(i);
+}
+
+
+Advantage=>
+	we are not required to specify the type multiple times. It is more convient to the programmer.
+
+
+
+=>Where we can use LVTI-:
+  1.  we can use for local variable inside a method.
+  2.  we can use for local variable inside static/instance block;
+  3. inside loop for index variable.
+  4. inside for each loop.
+  5. to store return value of a method.
+
+
+int[] ar = {1, 2, 3, 4};
+        for (var x: ar){
+            System.out.println(x);
+}
+
+//valid
+
+
+
+
+
+public class Main {
+    int i;
+
+    {
+        var i = 10;
+    }
+
+    static {
+        var x = 12;
+        System.out.println(x);
+    }
+
+    public static void main(String[] args) {
+        var s = "String";
+        s = "new String";
+        System.out.println(s);
+        var i = 12;
+        System.out.println(i);
+    }
+}
+
+
+
+
+
+
+public class Main {
+    
+    public static void main(String[] args) {
+       var s = m1();
+    }
+
+     public static String m1() {
+       return "abcd";
+    }
+}
+
+
+
+=>Where we can not use LVTI-:
+
+1. as a instance/static variable
+2. we can not use LVTI for uninitialized local variables.
+
+
+
+public class Main {
+    
+    public static void main(String[] args) {
+       var s;   //compile time error
+    }     
+}
