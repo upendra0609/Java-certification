@@ -355,6 +355,11 @@ var x = {1,2,3}; //invalid
 
 +,-,*,/,%
 max(int, type of a, type of b)
+ex; int + float =float
+    char + int = int
+    float + double = double
+etc.
+
 
 
 	byte a = 20;
@@ -402,6 +407,23 @@ System.out.println(Float.NaN!= Float.NaN);    // true
 
 
 -> ArithematicException is run time exception, and will raised only in  integral arithematic but not in floating point arithematic, the only operators which cause arithematic Exception are /and %.
+
+
+
+
+
+Relational Operator:
+1.  can apply for primitive.
+2.  can not apply for non-primitive.
+3.  nesting of relational operator is not allowed.(10<20<30<40) invalid
+
+
+
+
+
+
+
+
 
 
 	
