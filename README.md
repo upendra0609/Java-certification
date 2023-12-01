@@ -343,3 +343,65 @@ var x = {1,2,3}; //invalid
         System.out.println($3);
         System.out.println(_1);
 
+
+
+
+
+
+*Operator and Assignment :
+	1. increment/decrement we can apply for any primitive type except boolean. Automatic typecasting will be done for increment/decrement operator.
+
+
+
++,-,*,/,%
+max(int, type of a, type of b)
+
+
+	byte a = 20;
+        byte b = 30;
+        byte c = a+b;   //compile time error
+        System.out.println(c);
+
+
+
+	final byte a = 20;
+        final byte b = 30;
+        byte c = a+b;    //valid
+        System.out.println(c);
+
+
+
+
+	char ch1 = 'a';
+        char ch2 = 's';
+        char ch = ch1 + ch2;    //compile time error
+        System.out.println(ch);
+
+
+
+	char ch1 = 'a';
+        char ch2 = 's';
+        char ch = (int)ch1 + ch2;    //valid
+        System.out.println(ch);
+
+
+
+        System.out.println('a'+'b'+'c'); // 294
+
+
+	System.out.println(10.0/0);   //(double/int) INFINITY
+        System.out.println(10.0f/0);   //(float/int) INFINITY
+        System.out.println(10/0);      //(int/int)   exception / by zero
+
+in case of int type result we will get run time exception otherwise we will get INFINITY
+
+
+
+System.out.println(Float.NaN== Float.NaN);   //(comparing NaN with any number will return always false)false
+System.out.println(Float.NaN!= Float.NaN);    // true
+
+
+-> ArithematicException is run time exception, and will raised only in  integral arithematic but not in floating point arithematic, the only operators which cause arithematic Exception are /and %.
+
+
+	
