@@ -438,8 +438,10 @@ If there is no relation between argument types, then == operators will raise com
 
 
 
-Clone() method:
+Clone() method:  
 
+Shallow and Deep Cloning: present in Object class and by default meant for shallow cloning. If we want deep cloning for our objects, we required to override
+	                  clone method in our class.
 
 
 
