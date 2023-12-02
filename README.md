@@ -412,13 +412,33 @@ System.out.println(Float.NaN!= Float.NaN);    // true
 
 
 
-Relational Operator:
+Relational Operator(<,>,<=,>=):
 1.  can apply for primitive.
 2.  can not apply for non-primitive.
 3.  nesting of relational operator is not allowed.(10<20<30<40) invalid
 
 
+Equality Operator(==,!=);
+1. Can apply for primitive as well as non primitive.
 
+
+all are valid
+	System.out.println(10 == 20);
+        System.out.println('a' == 97.0);  //whenever lower and upper data type are compared lower will be auto casted to upper data type here 97.0==97.0
+        System.out.println(10.5 == 12.0);
+        System.out.println(false == false);
+
+
+
+If arguments are different types, then equals() method returns false and it won't raise any error.
+
+If there is no relation between argument types, then == operators will raise compile time error.
+
+
+
+
+
+Clone() method:
 
 
 
