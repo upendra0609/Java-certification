@@ -444,7 +444,11 @@ Shallow and Deep Cloning: present in Object class and by default meant for shall
 	                  clone method in our class.
 
 
+	
 
+	Student s1 = new Student("aaa", 101);
+        Student s2 = s1.clone();   //constructor will not execute in this line s1 initialized data will be there for for cloned object
+        System.out.println(s1==s2); 
 
 
 
