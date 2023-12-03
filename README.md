@@ -452,4 +452,10 @@ Shallow and Deep Cloning: present in Object class and by default meant for shall
 
 
 
+Bitwise operator:
+
+bitwise complement operator ~ is applicable only for integral values but not for boolean values.
+
+
+
 	
