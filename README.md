@@ -454,7 +454,49 @@ Shallow and Deep Cloning: present in Object class and by default meant for shall
 
 Bitwise operator:
 
+bitwise operator & | ^ is applicable only for boolean and integral values but not for boolean values.
 bitwise complement operator ~ is applicable only for integral values but not for boolean values.
+bitwise operator ! is applicable only for boolean values but not for boolean values.
+
+
+
+Short circuit operator=>
+
+&& || 
+
+
+
+
+
+
+
+
+Instanceof Operator:
+
+-to check if the given object is of perticular type or not.
+
+ArrayList l = new ArrayList();
+Object o = l.get(0);
+if(o instanceof Employee){
+	sout("emp");
+}else if(o instanceof Customer){
+	sout("cust");
+}
+
+
+
+
+	Thread t = new Thread();
+        System.out.println(t instanceof Thread);  //true
+        System.out.println(t instanceof Object);  //true
+        System.out.println(t instanceof Runnable);  //true
+	System.out.println(t instanceof String);    //compile time error
+	System.out.println(t instanceof Callable);    //false
+
+To use instanceof operator compulsary there should be some relation between argument types, otherwise we will get compile time error. But this rule is not applicable if the argument is interface type.
+
+
+
 
 
 
