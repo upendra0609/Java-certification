@@ -495,9 +495,102 @@ if(o instanceof Employee){
 
 To use instanceof operator compulsary there should be some relation between argument types, otherwise we will get compile time error. But this rule is not applicable if the argument is interface type.
 
+for any class or interface X
+null instanceof x is always false
+
+System.out.println(null instanceof Callable);    //false
+
+
+Assignment Operator:-
+
+1. Simple Assignment:
+
+int x = 10;
+
+2. Chained operator:
+
+a =b=c=d=10;
+
+int a = b=c=10;  //compile time error  b,c are not declared
+
+
+int a,b,c,d;
+a = b=c=d =12; //valid
+
+3. compound assignment
+
+a += 20;
+
+
+4. Conditional Operator(?:)
 
 
 
 
+	 int x = 10;
+         x = x++;
+         x = x++;
+         x = x++;
+         x = x++;
+         x = x++;
+         x = x++;
+         System.out.println(x);  //10
+1.Consider x value for assignment (10)
+2. Increment x value (x = 11)
+3. perform asssignment with old considered value
+   x = 10;
 
-	
+
+
+Operator Precedence:
+
+highest precedence goes to unary operator then binary operator at last to ternary operator.
+Assignment operator is having least precedence.
+
+
+unary->
+()
+x++,x--,
+++x,--x,~,!
+new , type cast
+
+
+
+binary->
+*,/,%
++,-
+
+>>,>>>,<<
+
+<,<=,>,>=, instanceof
+==, !=
+&
+^
+|
+
+&&
+||
+
+
+Ternary->
+?:
+
+
+Assignment->
+=
+
+
+
+
+Switch Statment:
+
+byte,short,char,int  =>allowed (bcz of fixed range)
+Byte, Short, Character, Integer =>allowed (bcz of autoboxing/autounboxing)
+Enum => allowed (bcz of fixed number of constant)
+String type also allowed
+
+boolean,long,float,double  => not allowed  (bcz of not fixed range, in case of boolean only two option are availabe so better to use if-else)
+
+
+
+=>curly brases are mandatory for switch and try-catch-finally
