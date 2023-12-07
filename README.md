@@ -594,3 +594,37 @@ boolean,long,float,double  => not allowed  (bcz of not fixed range, in case of b
 
 
 =>curly brases are mandatory for switch and try-catch-finally
+
+
+
+
+
+	final int a = 10, b = 20;
+        do {
+            System.out.println("Hello");
+        } while (a < b);
+        System.out.println("Hii");  //compile time error Unreachable statement
+
+
+
+
+Enhanced for loop->
+for(eachitem x : target){
+
+}
+
+target can be either array or collection.
+In for-each loop the target element should be iterable object (should implement Iterable interface).
+java.lang.Iterable
+ public Iterator iterator();
+
+
+
+
+Transfer Statement:
+
+break
+continue
+assert
+try-catch-finally
+
