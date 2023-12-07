@@ -11,6 +11,7 @@ public class Main {
         l1:
         for (int i = 0; i < 10; i++) {
             System.out.println(i);
+            l2:
             for (int j = i; j < 10; j++) {
                 System.out.println(j);
 //                break l1;
