@@ -1,7 +1,11 @@
 package com.sikku.doWhhile;
 
+
+
 public class Main {
     public static void main(String[] args) {
+
+
 //        final int a = 10, b = 20;
 //        do {
 //            System.out.println("Hello");
@@ -18,5 +22,11 @@ public class Main {
                 continue l1;
             }
         }
+    }
+
+    public void m1(Object obj) {
+        l1:
+        System.out.println("m1");
+
     }
 }

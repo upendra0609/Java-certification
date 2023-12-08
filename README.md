@@ -655,5 +655,33 @@ try-catch-finally
 
 Declaration and access Modifiers:
 
-Java Source File Structure:
+Java Source File Structure:  A file can have any number of java class.
 
+
+
+
+Import Statement:
+
+explicit class import
+ java.util.ArrayList;
+
+implicit class import
+ java.util.*;
+
+
+in case of both implicit/explicit there will be no effect on performance(bcz of dynamic class loading) class will load only at dynamic when any perticular class will be required. Still explicit import is recommended bcz of reading improvement.
+
+
+
+
+
+import java.util.Date;
+import java.sql.Date;
+
+
+
+public void m1(Object obj) {
+	Date d = new Date();
+}
+
+//compile time erroe
