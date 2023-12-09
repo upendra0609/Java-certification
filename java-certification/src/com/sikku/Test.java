@@ -13,21 +13,11 @@ public class Test {
 
         String s = "a";
         switch (s) {
-            case "A":
-                System.out.println("capital");
-                break;
-            case "b":
-                System.out.println("b");
-                break;
-            case "B":
-                System.out.println("B");
-                break;
-            case "a":
-                System.out.println("small letter");
-                break;
-            default:
-                System.out.println("not match");
-
+            case "A" -> System.out.println("capital");
+            case "b" -> System.out.println("b");
+            case "B" -> System.out.println("B");
+            case "a" -> System.out.println("small letter");
+            default -> System.out.println("not match");
         }
     }
 }
