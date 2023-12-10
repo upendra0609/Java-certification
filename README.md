@@ -684,4 +684,42 @@ public void m1(Object obj) {
 	Date d = new Date();
 }
 
-//compile time erroe
+//compile time error
+
+
+
+
+While resolving class name, compiler will always gives precedence in the following order:
+1. Explicit class import
+2. Classes present in current working directory
+3. Implicit class import
+
+
+
+
+import java.util.Date;
+import java.sql.*;
+
+public static void m1() {
+       Date d = new Date();
+       System.out.println(d);
+}
+
+//valid
+
+
+
+
+System.out.println();
+-------------------
+
+System is a class,
+out is a static variable in System class of the type PrintStream,
+println() is the method in PrintStream class.
+
+
+
+
+
+out and err:
+-------------
