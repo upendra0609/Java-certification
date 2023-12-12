@@ -723,3 +723,12 @@ println() is the method in PrintStream class.
 
 out and err:
 -------------
+
+
+
+-----------
+While resolving static members compiler will always gives precedence in the following order:
+
+1. current class static members
+2. Explicit static import members
+3. Implicit static import members
