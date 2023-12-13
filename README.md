@@ -732,3 +732,27 @@ While resolving static members compiler will always gives precedence in the foll
 1. current class static members
 2. Explicit static import members
 3. Implicit static import members
+
+
+How to compile package program
+------------------------------
+
+
+
+package com.sikku.importStatement;
+
+
+public class Main {
+    public static void main(String[] args) {
+       System.out.println("hello world!);
+   }
+}
+
+
+javac -d .Main.java                // . means current directory ex -d E: Test.java
+java com.sikku.importStatement.Main
+
+
+
+Class Modifiers:
+----------------
