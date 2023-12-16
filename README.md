@@ -756,3 +756,62 @@ java com.sikku.importStatement.Main
 
 Class Modifiers:
 ---------------------
+
+whether this class can be accessible from anywhere or not
+whether child class creation is possible or not
+whether object creation is possible or not
+
+allowed modifier for top level class
+---------------------
+public
+<default>
+abstract
+strictfp
+final
+
+allowed modifier for inner class
+--------------------------------
+
+public
+<default>
+abstract
+strictfp
+final
+  +
+private
+protected
+static
+
+
+
+Access modifiers:
+------------------------------------------
+
+
+
+
+
+Note: all methods available in final class are by default final but variable are not until they declare as final variables
+
+
+
+
+Abstract Method
+---------------
+Abstract method never talk about implementation. If any modifier talks about implementation then it will become enemy to abstract and that
+combination will become illegal.
+
+
+This combination is not allowed:
+
+  Abstract
+	final
+	synchronizeed
+	native
+	strictfp
+	private
+
+
+Abstract Class
+---------------
+Partially implemented class.
