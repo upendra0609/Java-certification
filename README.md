@@ -815,3 +815,65 @@ This combination is not allowed:
 Abstract Class
 ---------------
 Partially implemented class.
+
+
+
+
+Strictfp: 
+--------
+Class and Method level.
+The way of representing floating point value is varied from plateform to plateform.
+If a method declared with strictfp then all floating point calculation in that method will follow IEEE 754 standard so that we will get plateform independent results.
+If method is declared as strictfp then all the method to follow IEEE 754 standard so that we will get plateform independent results.
+
+
+
+
+
+Member Modifiers
+-----------------
+
+public Member: 
+
+If class and member both are public, then only we can access that member from outside of package.
+
+default member:
+----------------
+can be accessed within the package only.
+
+private member:
+---------------
+access within the same class only.
+
+protected:
+-----------
+within the same package and from outside of the package only in child classes.
+
+protected = <default>  + kids
+
+Within the same package we can access protected members either by using parent reference or by using child reeference.
+But from outside of the package, we can access protected members only in child classes and we use child class reference only.
+i.e. to access protected members from outside package we can not use parent reference.
+
+
+clone() and finalize() method present in Object class is having protected modifier.
+
+protected means highly recommended to override.
+Object class clone() method meant for shallow cloning but most of the time our requirement is deep cloning.
+
+
+finalize(): just before destroying an object Garbage collector calls finalizw() method to perform cleanup activities.
+	   Object class finalize() method has empty implementation and hence it is highly recommended to override to define
+	   own cleanup activities.
+
+
+
+final modifier
+--------------
+for final instance variable we should perform initialization before constructor completion.
+	: At the time of declaration
+	: Inside Instance block
+	: Inside Constructor
+for final static variable we shoouls perform initialization before class loading completion.
+	:At the time of declaration
+	: At static block
